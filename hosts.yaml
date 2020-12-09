@@ -1,0 +1,42 @@
+SW1:
+    hostname: '172.16.30.91'
+    port: 22
+    platform: 'ios'
+    groups:
+        - 'ios'
+SW2:
+    hostname: '172.16.30.92'
+    port: 22
+    platform: 'ios'
+    groups:
+        - 'ios'
+SW3:
+    hostname: '172.16.30.93'
+    port: 22
+    platform: 'ios'
+    groups:
+        - 'ios'
+SW4:
+    hostname: '172.16.30.94'
+    port: 22
+    platform: 'ios'
+    groups:
+        - 'ios'
+SW5:
+    hostname: '172.16.30.95'
+    port: 22
+    platform: 'ios'
+    groups:
+        - 'ios'
+SW6:
+    hostname: '172.16.30.96'
+    port: 22
+    platform: 'ios'
+    groups:
+        - 'ios'
+SW7:
+    hostname: '172.16.30.97'
+    port: 22
+    platform: 'ios'
+    groups:
+        - 'ios'

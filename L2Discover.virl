@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<topology xmlns="http://www.cisco.com/VIRL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="0.95" xsi:schemaLocation="http://www.cisco.com/VIRL https://raw.github.com/CiscoVIRL/schema/v0.95/virl.xsd">
+    <extensions>
+        <entry key="management_network" type="String">flat</entry>
+    </extensions>
+    <node location="150,60" type="SIMPLE" subtype="IOSvL2" name="SW1">
+        <extensions>
+            <entry key="AutoNetkit.ASN" type="Integer">1</entry>
+        </extensions>
+        <interface name="GigabitEthernet0/1" id="0"/>
+    </node>
+    <node location="150,390" type="SIMPLE" subtype="IOSvL2" name="SW2">
+        <extensions>
+            <entry key="config" type="string"/>
+            <entry key="AutoNetkit.ASN" type="Integer">1</entry>
+        </extensions>
+        <interface name="GigabitEthernet0/1" id="0"/>
+    </node>
+    <node location="270,210" type="SIMPLE" subtype="IOSvL2" name="SW3">
+        <extensions>
+            <entry key="AutoNetkit.ASN" type="Integer">1</entry>
+        </extensions>
+        <interface name="GigabitEthernet0/1" id="0"/>
+        <interface name="GigabitEthernet0/2" id="1"/>
+        <interface name="GigabitEthernet0/3" id="2"/>
+    </node>
+    <node location="450,210" type="SIMPLE" subtype="IOSvL2" name="SW4">
+        <extensions>
+            <entry key="AutoNetkit.ASN" type="Integer">1</entry>
+        </extensions>
+        <interface name="GigabitEthernet0/1" id="0"/>
+        <interface name="GigabitEthernet0/2" id="1"/>
+    </node>
+    <node location="630,210" type="SIMPLE" subtype="IOSvL2" name="SW5">
+        <extensions>
+            <entry key="AutoNetkit.ASN" type="Integer">1</entry>
+        </extensions>
+        <interface name="GigabitEthernet0/1" id="0"/>
+        <interface name="GigabitEthernet0/2" id="1"/>
+        <interface name="GigabitEthernet0/3" id="2"/>
+    </node>
+    <node location="750,90" type="SIMPLE" subtype="IOSvL2" name="SW6">
+        <extensions>
+            <entry key="AutoNetkit.ASN" type="Integer">1</entry>
+        </extensions>
+        <interface name="GigabitEthernet0/1" id="0"/>
+    </node>
+    <node location="750,390" type="SIMPLE" subtype="IOSvL2" name="SW7">
+        <extensions>
+            <entry key="AutoNetkit.ASN" type="Integer">1</entry>
+        </extensions>
+        <interface name="GigabitEthernet0/1" id="0"/>
+    </node>
+    <connection src="/virl:topology/virl:node[3]/virl:interface[3]" dst="/virl:topology/virl:node[4]/virl:interface[1]"/>
+    <connection src="/virl:topology/virl:node[4]/virl:interface[2]" dst="/virl:topology/virl:node[5]/virl:interface[1]"/>
+    <connection src="/virl:topology/virl:node[5]/virl:interface[2]" dst="/virl:topology/virl:node[6]/virl:interface[1]"/>
+    <connection src="/virl:topology/virl:node[5]/virl:interface[3]" dst="/virl:topology/virl:node[7]/virl:interface[1]"/>
+    <connection src="/virl:topology/virl:node[2]/virl:interface[1]" dst="/virl:topology/virl:node[3]/virl:interface[1]"/>
+    <connection src="/virl:topology/virl:node[1]/virl:interface[1]" dst="/virl:topology/virl:node[3]/virl:interface[2]"/>
+</topology>
